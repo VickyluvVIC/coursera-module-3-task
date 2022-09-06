@@ -106,5 +106,109 @@
                                                                                                                                                                                                                             padding-top: 5px;
                                                                                                                                                                                                                             padding-bottom: 5px;
                                                                                                                                                                                                                             border: 5px outset gray;
-                                                                                                                                                                                                                        }
+   
+   }
                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                    /*I added personal stylings to this work that does not affect the instruciton and requirements for grading, thank you*/
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+    font-size: 4em;
+}
+
+.container {
+    width: 100%;
+}
+
+.grid-item {
+    border: 10px outset rgb(227, 222, 222);
+    background-color: rgb(172, 209, 255);
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 5%;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chick {
+    background-color: #c7ced6;
+}
+
+.be {
+    background-color: #778789;
+}
+
+.sus {
+    background-color: #526edc;
+}
+
+button {
+    width: 25%;
+    height: 30px;
+    font-size: 16px;
+    border: 1px inset white;
+    position: absolute;
+    right: 0;
+}
+
+button:hover {
+    background-color: white;
+    font-weight: bold;
+    border: 3px dotted rgb(91, 139, 159);
+}
+
+p {
+    padding-top: 7%;
+    padding-left: 1%;
+    padding-right: 5%;
+    font-size: 20px;
+    margin: 0;
+    text-align: justify;
+}
+
+
+/*desktop*/
+
+@media (min-width: 992px) {
+    .c-lg-3,
+    .b-lg-3,
+    .s-lg-3 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .c-md-3,
+    .b-md-3,
+    .s-md-3 {
+        float: left;
+    }
+    .c-md-3,
+    .b-md-3 {
+        width: 50%;
+    }
+    .s-md-3 {
+        width: 100%;
+    }
+}
+
+
+/*phone*/
+
+@media (max-width:767px) {
+    .c-sm-3,
+    .b-sm-3,
+    .s-sm-3 {
+        width: 100%
+    }
+}
